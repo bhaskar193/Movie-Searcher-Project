@@ -1,0 +1,37 @@
+
+<%- include("./partials/header.ejs") %> 
+
+    <%if(movieData.Response === 'True'){%>
+        
+
+        <%var i = 1;%>
+        <div class="container">
+        <% movieData.Search.forEach(function (element){ 
+            if(i===1){%>
+                <div class="row">
+            <%}%>
+            <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+            <img src= "<%= element.Poster %> " class="card-img-top" alt="Poster of the movie.">
+            <div class="card-body">
+              <h5 class="card-title"><%=element.Title%></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="/result/<%=element.imdbID%>" class="btn btn-primary">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <%if(i===4){i = 1%>
+            </div>
+            <%}
+        else{i = i+1}
+        %>
+
+    <%});} else {%>
+
+        <h1 style="text-align: center;">Aisi koi movie hai hi nahi</h1>
+
+        <% } %> 
+    </div>
+
+    <%- include("./partials/footer.ejs") %> 

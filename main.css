@@ -1,0 +1,9 @@
+h1 {
+    color: rgb(94, 65, 121);
+    text-align: center;
+}
+.cardmb-3 {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}

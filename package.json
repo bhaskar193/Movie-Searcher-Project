@@ -1,0 +1,27 @@
+{
+  "name": "bhaskar",
+  "version": "1.2.3",
+  "description": "yoyoy",
+  "main": "asld;j",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "laksdj"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sfl;jk"
+  },
+  "keywords": [
+    "maakichoo"
+  ],
+  "author": "thakan",
+  "license": "ISC"
+}

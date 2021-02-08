@@ -1,0 +1,24 @@
+<%- include("./partials/header.ejs") %> 
+
+<div class = "mx-auto" class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="<%=movieData.Poster%>" class="card-img" alt="Poster of movie">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%=movieData.Title%></h5>
+          <p class="card-text">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><%=movieData.Year%> | <%=movieData.Genre%> | <%=movieData.Runtime%></li>
+                <li class="list-group-item"><b>Actors: </b><%=movieData.Actors%></li>
+                <li class="list-group-item"><b>Director(s): </b><%=movieData.Director%></li>
+              </ul>
+          </p>
+          <p class="card-text"><small class="text-muted"><%=movieData.Plot%></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <%- include("./partials/footer.ejs") %> 
