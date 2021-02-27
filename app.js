@@ -46,11 +46,3 @@ app.get("/result/:id", (req, res)=>{
  app.listen(process.env.PORT, ()=>{
      console.log('SERVER STARTED')
  })
-//  {app.get("/classroom/:name", (req, res)=>{
-//        res.send(`You are in ${req.params.name} now`)
-//        console.log("yoyo")
-//  })
-// app.get("/result", (req,res)=>{
-//     console.log(req.query.movieName)
-//     res.send("Data Received")
-// })}
